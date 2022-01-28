@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --pri-cyan: hsl(178, 100%, 50%);
+    --h-cyan: hsla(178, 100%, 50%, 0.63);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --c-white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color:  var(--main-bg);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 5% auto ;
+}
+
+.card {
+    background-color: var(--card-bg);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: var(--card-bg) 0px 5px 15px;}
+
+.card-content {
+    margin: 20px;
+    width: auto;
+    height: 470px;
+}
+
+.card-art {
+    height: 50%;
+    margin: 0  auto;
+}
+
+
+.art-pic {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border-radius: 20px;
+}
+
+#art-pic-hover {
+    display: none;
+}
+
+.card-text {
+    height: 38%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.art-name {
+    color: var(--c-white);
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    font-weight: bold;
+
+}
+
+.art-name:hover {
+    color: var(--pri-cyan);
+}
+
+p.main-text {
+    font-size: 18px;
+    color: var(--soft-blue);
+    text-align: start;
+}
+
+.card-price {
+    display: flex;
+    align-content: space-around;
+    align-items: center;}
+
+.price {
+    display: inline;
+    color: var(--pri-cyan);
+    margin: 5px;
+
+}
+
+.eth-pic {
+    display: inline;
+}
+
+
+
+.card-time {
+    display: flex;
+    align-content: space-around;
+    align-items: center;}
+
+.time-pic {
+    display: inline;
+}
+
+.time-left {
+    display: inline;
+    color: var(--soft-blue);
+    margin: 5px;
+
+}
+
+hr {
+    width: 85%;
+    color: var(--line-color);
+}
+
+.creator {
+    height: 12%;
+    border-top: 0.1px solid var(--soft-blue);
+    font-size: 12px;
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.creator-name {
+    display: inline;
+}
+
+.c-name {
+    color: var(--c-white);
+}
+
+.c-name:hover {
+    color: var(--pri-cyan);
+}
+
+.creator-avatar {
+    display: inline;
+    border: 1px solid var(--c-white);
+    border-radius: 100%;
+    width: 30px;
+    height: max-content;
+    margin: 0 20px;
+}
+
+.pre-creator {
+    color: var(--soft-blue);
+}
+.attribution {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+
+}
